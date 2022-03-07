@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 package jasypt;
 
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
@@ -15,7 +14,4 @@ public class TestJasypt {
         System.out.println("Encrypted Result : " + result);
         System.out.println("Decrypted Result : " + standardPBEStringEncryptor.decrypt(result));
     }
-=======
-package jasypt;public class TestJasypt {
->>>>>>> Stashed changes
 }
