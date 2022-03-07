@@ -15,7 +15,7 @@ spring:
         git:
           uri: https://github.com/biblip/spring-cloud-config-server-repository.git
           username: arturoportilla@gmail.com
-          password: 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
+          password: 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
           clone-on-start: true
       fail-fast: true
   security:
