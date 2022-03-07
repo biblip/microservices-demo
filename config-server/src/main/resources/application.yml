@@ -14,15 +14,15 @@ spring:
       server:
         git:
           uri: https://github.com/biblip/spring-cloud-config-server-repository.git
-          username: arturoportilla@gmail.com
-          password: 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
+          username: ENC(imLRaJg9np8YGH1PngrxZF2feoKMkQTEw6FWrbcHo3w1Qo1VaJBdbGFDfkmbvKAmEjqEDvE+zywJEr3fxv3yfQ==)
+          password: ENC(ujfUamjVf9Whr6jSKbdlF8vtdhI2WB9Kp6Jmo0gMhY1cTrUqPrgs2fPMMyplzGDkTzR5YvVJ4FQbIqJkkv7VChkO9pAMFreoaFScpyR9Zxc=)
           clone-on-start: true
       fail-fast: true
   security:
     user:
-      name: spring_cloud_user
+      name: ENC(xuuNm4s7d/jwAnKeJz6MiXTXOrpEkVIh+uW/WdAsm9y1sz3PXcgf+NY0YkU3kZyrFrKaXWWi4OY27ZnUF8qWyQ==)
       password: ENC(zgfyYRHdZB2d43rAPZhtSfBTKfmscz45F0n9le0KAJd7il+2qJe6PrduUe9pNqhU4JnSERlFarofDZmjzBjbpw==)
 
 jasypt:
   encryptor:
-    password: Demo_Pwd!2022
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}

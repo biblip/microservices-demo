@@ -1,6 +1,9 @@
 version: '3.7'
 services:
   config-server-service:
+    env_file:
+      - .secrets-common.env
+      - .secrets-config-server-service.env
     image: ${GROUP_ID}/config-server.service:${SERVICE_VERSION:-latest}
     ports:
       - "5007:5007"
@@ -10,6 +13,9 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-services}
   twitter-to-kafka-service:
+    env_file:
+      - .secrets-common.env
+      - .secrets-twitter-to-kafka-service.env
     image: ${GROUP_ID}/twitter.to.kafka.service:${SERVICE_VERSION:-latest}
     ports:
       - "5005:5005"
