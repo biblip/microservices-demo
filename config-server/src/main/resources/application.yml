@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/biblip/spring-cloud-config-server-repository.git
+          username: arturoportilla@gmail.com
+          password: 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
+          clone-on-start: true
+      fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
