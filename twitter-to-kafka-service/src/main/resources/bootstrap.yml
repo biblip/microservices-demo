@@ -11,7 +11,3 @@ spring:
       username: ENC(xuuNm4s7d/jwAnKeJz6MiXTXOrpEkVIh+uW/WdAsm9y1sz3PXcgf+NY0YkU3kZyrFrKaXWWi4OY27ZnUF8qWyQ==)
       # plain password is: springCloud_Pwd!
       password: ENC(zgfyYRHdZB2d43rAPZhtSfBTKfmscz45F0n9le0KAJd7il+2qJe6PrduUe9pNqhU4JnSERlFarofDZmjzBjbpw==)
-
-jasypt:
-  encryptor:
-    password: ${JASYPT_ENCRYPTOR_PASSWORD}
